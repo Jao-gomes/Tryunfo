@@ -1,0 +1,87 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  background-color: aliceblue;
+
+  .creationField {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    background: url("https://previews.123rf.com/images/liligraphie/liligraphie1502/liligraphie150200141/36512126-viejas-cartas-escritura-vintage-tarjetas-postales-ephemera-grungy-nost%C3%A1lgico-fondo-de-papel-sentimen.jpg") rgba($color: #000000, $alpha: 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    input {
+      background-color: transparent;
+    }
+
+    input[type="text"] {
+      width: 60%;
+      border-radius: 8px;
+      height: 30px;
+      font-size: 16px;
+      outline: none;
+      padding-left: 5px;
+    }
+
+    input[type="number"] {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+    }
+
+    input[type="checkbox"] {
+      width: 50px;
+      height: 50px;
+    }
+
+    button {
+      height: 40px;
+      width: 15%;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+        border: 3px solid rgb(255, 185, 196);
+        background-color: rgb(245, 182, 193);
+      }
+    }
+
+    label {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-flow: row nowrap;
+
+      select {
+        height: 30px;
+        border-radius: 8px;
+        border: 1px solid black;
+        font-size: 16px;
+      }
+    }
+
+    .attr-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-flow: row nowrap;
+      width: 100%;
+
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: row nowrap;
+      }
+    }
+  }
+}
